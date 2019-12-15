@@ -1,0 +1,83 @@
+.wrapper {
+    font-family: 'Kanit', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+h1{
+    color: rgb(43, 43, 43);
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 60px
+
+}
+
+h3 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 30px
+}
+
+
+img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+
+img.rounded-corners {
+    border-radius: 30px;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+
+
+.overlay {
+    opacity: 0
+}
+
+.wrapper:hover img {
+    opacity: .2;
+    transform: scale(1.1);
+}
+
+.wrapper:hover .overlay {
+    opacity: 1
+}
+
+
+.container {
+    width: 1300px;
+    overflow: hidden;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+table,
+tr,
+td {
+    border: black solid 1px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto
+}
+
+.card img {
+    width: 240px;
+}
