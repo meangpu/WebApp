@@ -59,7 +59,7 @@ body {
 
 
 .container {
-    width: 1300px;
+    width: 1000px;
     overflow: hidden;
     height: auto;
     margin: 20px auto;
@@ -75,9 +75,9 @@ td {
 
 .row {
     display: grid;
-    grid-template-columns: auto auto
+    grid-template-columns: auto auto 
 }
 
 .card img {
-    width: 340px;
+    width: 390px;
 }
