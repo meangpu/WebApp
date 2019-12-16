@@ -27,10 +27,10 @@ a {
     color: #ffffff;
   }
   a:visited {
-    color: rgb(184, 184, 184);
+    color: rgb(228, 228, 228);
   }
   a:hover, a:active, a:focus {
-    color:rgba(158, 158, 158, 0.644);
+    color:rgba(148, 148, 148, 0.644);
   }
 
 img {
