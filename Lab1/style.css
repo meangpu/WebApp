@@ -1,55 +1,83 @@
+.wrapper {
+    font-family: 'Kanit', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
 
 h1{
-    color: rgb(247, 247, 247);
+    color: rgb(43, 43, 43);
     font-family: 'Kanit', sans-serif;
     text-align: center;
     font-size: 60px
 
 }
 
-
-h2{
-    color: rgb(201, 201, 201);
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-    font-size: 20px
-
-}
-
-p {
-    color: rgb(247, 247, 247);
+h3 {
     font-family: 'Kanit', sans-serif;
     text-align: center;
     font-size: 30px
 }
 
-a {
-    color: #ffffff;
-  }
-  a:visited {
-    color: rgb(184, 184, 184);
-  }
-  a:hover, a:active, a:focus {
-    color:rgba(158, 158, 158, 0.644);
-  }
 
 img {
-    width: 20%;
+    opacity: 1;
     display: block;
-    margin-left: auto;
-    margin-right: auto
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
 }
 
 img.rounded-corners {
     border-radius: 30px;
 }
 
-
 body {
+    font-family: 'Kanit', sans-serif;
     margin: 0;
     padding: 0;
-    background: #353535;
+    background: #f0f0f0;
 }
 
 
 
+.overlay {
+    opacity: 0
+}
+
+.wrapper:hover img {
+    opacity: .2;
+    transform: scale(1.1);
+}
+
+.wrapper:hover .overlay {
+    opacity: 1
+}
+
+
+.container {
+    width: 1300px;
+    overflow: hidden;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+table,
+tr,
+td {
+    border: black solid 1px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+.card img {
+    width: 340px;
+}
