@@ -50,7 +50,7 @@ body {
 
 .wrapper:hover img {
     opacity: .2;
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .wrapper:hover .overlay {
@@ -79,5 +79,5 @@ td {
 }
 
 .card img {
-    width: 240px;
+    width: 225px;
 }
