@@ -1,0 +1,17 @@
+p {
+    display: inline;
+}
+
+div.green {
+    background-color: lightgreen;
+    width: 200px;
+    border: 5px solid green;
+    padding: 5px;
+}
+
+div.blue {
+    background-color: lightblue;
+    width: 200px;
+    border: 5px solid blue;
+    padding: 5px;
+}
