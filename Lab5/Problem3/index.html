@@ -6,42 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Lab4-P2-NattapongTang</title>
+    <script src="scripts.js" async></script>
+    <title>NattapongTang-128-7</title>
 </head>
 
 <body>
-    <div class=blue>
-        <p>This is an unorder list:</p>
-    </div>
-    <ul style="list-style-type:circle;">
-        <li>
-            Coffee
-        </li>
-        <li>
-            Tea
-        </li>
-        <li>
-            Coca Cola
-        </li>
-    </ul>
+    <label>Enter student name: </label><input type="text" id="username">
+    <br> English <input type="radio" name="lang" value="eng"> Thai
+    <input type="radio" name="lang" value="th">
 
-
-    <div class=green>
-        <p>This is an order list:</p>
-    </div>
-    <ol type="i">
-        <li>
-            Coffee
-        </li>
-        <li>
-            Tea
-        </li>
-        <li>
-            Coca Cola
-        </li>
-    </ol>
-
-
+    <br>
+    <input type="submit" id="submitbt" value="Generate random words">
+    <h1 id="final"></h1>
 </body>
 
 </html>

@@ -5,15 +5,11 @@
     position: relative;
 }
 
-
-
-
-h1{
+h1 {
     color: rgb(43, 43, 43);
     font-family: 'Kanit', sans-serif;
     text-align: center;
     font-size: 60px
-
 }
 
 h3 {
@@ -21,7 +17,6 @@ h3 {
     text-align: center;
     font-size: 30px
 }
-
 
 img {
     opacity: 1;
@@ -42,8 +37,6 @@ body {
     background: #f0f0f0;
 }
 
-
-
 .overlay {
     opacity: 0
 }
@@ -57,7 +50,6 @@ body {
     opacity: 1
 }
 
-
 .container {
     width: 1000px;
     overflow: hidden;
@@ -65,7 +57,6 @@ body {
     margin: 20px auto;
     padding: 20px;
 }
-
 
 table,
 tr,
@@ -75,9 +66,9 @@ td {
 
 .row {
     display: grid;
-    grid-template-columns: auto auto 
+    grid-template-columns: auto auto auto
 }
 
 .card img {
-    width: 390px;
+    width: 290px;
 }
