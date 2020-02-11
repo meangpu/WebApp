@@ -51,11 +51,11 @@ body {
 }
 
 .container {
-    width: 1300px;
+    width: 1200px;
     overflow: hidden;
     height: auto;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 4px auto;
+    padding: 5px;
 }
 
 table,
@@ -70,5 +70,5 @@ td {
 }
 
 .card img {
-    width: 200px;
+    width: 180px;
 }
