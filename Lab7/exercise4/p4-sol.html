@@ -8,24 +8,76 @@
         #mustache-pic {
             position: absolute;
         }
+        
+        input {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
     </style>
 </head>
 
 <body>
 
     <img id="cat-pic" src="https://www.kasandbox.org/programming-images/animals/cat.png" width="300" alt="cat photo">
-
     <img id="mustache-pic" src="https://www.kasandbox.org/programming-images/misc/mustache.png" alt="mustache" width="100">
+    <br>
+    <input type="button" value="Change Image" id="btn">
+    <input type="button" value="GoBackToOriginal" id="btnBack">
+    <p>I modify the code so that
+        <ul>
+            <li>I have old version of this exercise, can go by click at <b>GoBackToOriginal</b></li>
+            <li>The 'mustache-pic' will appear in cat picture <b>at the position that user click.</b></li>
+            <li>The 'mustache-pic' will <b>alway be at the center</b> of the mouse.</li>
+            <li>User can change <b>'mustache-pic' to another picture</b> by click at "Change Image"</li>
+        </ul>
+
+    </p>
+    <p>***ผมเพิ่มส่วนนี้เข้ามาเพราะท้ายคาบวันนั้นพี่ที่เข้ามาช่วยสอน ถามเพิ่มว่า ถ้าจะให้มันคลิ๊กแล้วไปอยู่ที่เมาส์ จะเป็นยังไง แล้วถ้าเราเปลี่ยนรูป รูปมันจะเพี้ยน ไม่อยู่ตรงกลาง ผมเลยลองทำเพิ่มดูครับ
+    </p>
 
     <script>
+        var x = true
+        var originalImg = "https://www.kasandbox.org/programming-images/misc/mustache.png"
+        var anotherImg = "https://pngimage.net/wp-content/uploads/2018/06/glass-milk-png-1.png"
+        var btn = document.getElementById("btn")
+        var btnBack = document.getElementById("btnBack")
         var catPic = document.getElementById("cat-pic");
+        var stashePic = document.getElementById("mustache-pic");
+        var picWidth = stashePic.clientWidth
+        var picHeight = stashePic.clientHeight
+        btnBack.style.backgroundColor = "red"
+
         var onCatClick = function(e) {
-            var stashePic = document.getElementById("mustache-pic");
-            stashePic.style.top = "130px";
-            stashePic.style.left = "115px";
+            var x = event.clientX
+            var y = event.clientY
+            stashePic.style.top = (y - (picHeight / 2)) + "px"
+            stashePic.style.left = (x - (picWidth / 2)) + "px"
         };
         catPic.addEventListener("click", function() {
+            picWidth = stashePic.clientWidth
+            picHeight = stashePic.clientHeight
+            console.log(picWidth)
+            console.log(picHeight)
             onCatClick(this)
+        });
+
+        btn.addEventListener("click", function() {
+            if (x) {
+                stashePic.src = anotherImg
+                x = false
+            } else {
+                stashePic.src = originalImg
+                x = true
+            }
+        });
+        btnBack.addEventListener("click", function() {
+            window.open("p4-sol-old.html")
         });
     </script>
 </body>
