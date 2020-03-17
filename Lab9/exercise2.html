@@ -28,20 +28,25 @@
         para.style.padding = "10px"
         para.style.width = "250px"
         para.style.textAlign = "center"
-        para.style.cursor = "pointer"
+            // para.style.cursor = "pointer"
 
         para.removeChild(link)
 
         para.textContent = "We hope you enjoy learning"
 
-        para.addEventListener("click", function() {
-            window.location.href = url
-        })
+        // para.addEventListener("click", function() {
+        //     window.location.href = url
+        // })
 
 
         image.src = "image/kku.jpg"
         image.alt = "ENkku"
         image.style.width = "270px"
+        image.style.cursor = "pointer"
+
+        image.addEventListener("click", function() {
+            window.location.href = url
+        })
     </script>
 </body>
 
