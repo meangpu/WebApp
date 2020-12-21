@@ -1,8 +1,7 @@
 # study
 For EN842300 Interactive Web Programing
-and
+and Mobile Application Development
 ****************************
-Mobile Application Development
 Nattapong Tangsatheanrapap <613040128-7>
 Lab 1
 Unity Publish URL <https://play.unity.com/mg/other/webgl-builds-4753>
