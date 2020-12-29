@@ -7,6 +7,7 @@ Lab 1
 Unity Publish URL <https://play.unity.com/mg/other/export-si>  
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab1/>  
 Lab 2   
-Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab2/>
-Github Unity Project Forked
+Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab2/>  
+Github Unity Project Forked  
+"""https://github.com/meangpu/unitylab2"""
 
