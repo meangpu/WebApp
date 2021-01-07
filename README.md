@@ -22,9 +22,9 @@ https://github.com/meangpu/unitylab2
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab3/Exported/FPS/>  
 Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab3/UnityGameRaw/FPS>  
 #### **PUZZLE**  
-Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab3/Exported/FPS/>  
-Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab3/UnityGameRaw/FPS>  
+Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab3/Exported/PUZZLE/>  
+Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab3/UnityGameRaw/PUZZLE>  
 #### **RPG**  
-Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab3/Exported/FPS/>  
-Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab3/UnityGameRaw/FPS>  
+Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab3/Exported/RPG/>  
+Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab3/UnityGameRaw/RPG>  
 ****************************************************
