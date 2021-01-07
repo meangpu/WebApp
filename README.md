@@ -12,4 +12,5 @@ Github Unity Project Forked
 ```  
 https://github.com/meangpu/unitylab2
 ```
+Error Screen Capture <https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg>
 
