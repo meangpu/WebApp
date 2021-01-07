@@ -1,6 +1,5 @@
-# STUDY
-For EN842300 Interactive Web Programing and Mobile Application Development
-#### Nattapong Tangsatheanrapap <613040128-7>  
+# STUDY For EN842300 Interactive Web Programing and Mobile Application Development
+## Nattapong Tangsatheanrapap <613040128-7>  
 ****************************************************
 ## **Lab 1**  
 Unity Publish URL <https://play.unity.com/mg/other/export-si>  
