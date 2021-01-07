@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Creator Kit - Puzzle/Scenes/UserCreated/newMenu.unity
-    guid: a72468a57053f604e90b7fb01a7aa4a3
+    path: Assets/Creator Kit - Puzzle/Scenes/ExampleScenes/ExampleMenu.unity
+    guid: 0d85e03bacb199f408b4439fac4e3d46
   - enabled: 1
-    path: Assets/Creator Kit - Puzzle/Scenes/UserCreated/nattapong1.unity
-    guid: 5cae2c9ec10524448b575f4fc8f25036
+    path: Assets/Creator Kit - Puzzle/Scenes/ExampleScenes/Level01.unity
+    guid: 2e165c8be289f47448ae22da26c690f2
+  - enabled: 1
+    path: Assets/Creator Kit - Puzzle/Scenes/ExampleScenes/Level02.unity
+    guid: 8587612e8826fec4994aafd966fa4dc3
+  - enabled: 1
+    path: Assets/Creator Kit - Puzzle/Scenes/ExampleScenes/Level03.unity
+    guid: 8e80dae27616da241995f2290dca03b7
   m_configObjects: {}
