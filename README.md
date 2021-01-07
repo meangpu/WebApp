@@ -11,7 +11,7 @@ Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab2/>
 Error Screen Capture <https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg>  
 
 <p>
-  <img src="https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg" width="350" title="error image">
+  <img src="https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg" width="500" title="error image">
 </p>
 
 
