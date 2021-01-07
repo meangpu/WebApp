@@ -9,6 +9,8 @@ Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab1/>
 Lab 2   
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab2/>  
 Error Screen Capture <https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg>  
+![alt text](https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg)
+
 Github Unity Project Forked  
 ```  
 https://github.com/meangpu/unitylab2
