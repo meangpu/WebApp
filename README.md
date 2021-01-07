@@ -21,5 +21,6 @@ https://github.com/meangpu/unitylab2
 ```
 ****************************************************
 ## **Lab 3**
-Github Page <>  
+Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab3/Exported/FPS/>  
+Raw project file <>
 
