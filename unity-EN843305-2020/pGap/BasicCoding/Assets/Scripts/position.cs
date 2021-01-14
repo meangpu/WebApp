@@ -5,8 +5,6 @@ using UnityEngine;
 public class position : MonoBehaviour
 {
     public int movementSpeed;
-    public Vector3 speedUpdate;
-    
     void Start()
     {
         // transform.position = new Vector3(5, 2, 0);
@@ -14,6 +12,10 @@ public class position : MonoBehaviour
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.A) && (Input.GetKey(KeyCode.LeftShift))){
+            print("big A key was pressed!!");
+        }
 
         //get the Input from Horizontal axis
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -25,11 +27,6 @@ public class position : MonoBehaviour
 
         //output to log the position change
         Debug.Log(transform.position);
-
-        if (Input.GetKeyDown(KeyCode.A) && (Input.GetKey(KeyCode.LeftShift))){
-            print("big A key was pressed!!");
-        }
- 
 
     }
 }
