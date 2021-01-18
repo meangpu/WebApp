@@ -5,8 +5,7 @@ website <https://meangpu.github.io/study/unity-EN843305-2020/>
 # **ajKanda**  
 ## **slide 1**  
 <p>
-   <a href="https://youtu.be/gGpbCCyqbJk"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.gif" width="500" title="error image"></a> 
- 
+   <a href="https://youtu.be/gGpbCCyqbJk"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.gif" width="500" title="click to watch in youtube"></a> 
 </p>
 
 
