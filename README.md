@@ -4,7 +4,8 @@
 website <https://meangpu.github.io/study/unity-EN843305-2020/>  
 # **ajKanda**  
 ## **slide 1**  
-https://www.youtube.com/watch?v=<https://youtu.be/gGpbCCyqbJk>  
+https://img.youtube.com/vi/gGpbCCyqbJk/maxresdefault.jpg
+
 
 # **MainLabs**  
 ## **Lab 1**  
