@@ -2,6 +2,11 @@
 ## Nattapong Tangsatheanrapap <613040128-7>  
 ****************************************************
 website <https://meangpu.github.io/study/unity-EN843305-2020/>  
+# **ajKanda**  
+## **slide 1**  
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.mp4)  
+
+# **MainLabs**  
 ## **Lab 1**  
 Unity Publish URL <https://play.unity.com/mg/other/export-si>  
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab1/>  
