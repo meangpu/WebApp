@@ -5,6 +5,10 @@ using UnityEngine;
 public class position : MonoBehaviour
 {
     public int movementSpeed;
+    private float currentTime = 0f;
+    private float lastTIme = 0f;
+    private float deltaTime = 0f;
+
     void Start()
     {
         // transform.position = new Vector3(5, 2, 0);
