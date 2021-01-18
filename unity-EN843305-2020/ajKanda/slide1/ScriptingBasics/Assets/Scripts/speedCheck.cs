@@ -10,7 +10,7 @@ public class speedCheck : MonoBehaviour
 
 
     // ip stand from input
-    void calculateSpeed(float ipdistance, float iptime){
+    void CalculateSpeed(float ipdistance, float iptime){
         float ipspeed = ipdistance/iptime;
         if (ipspeed > 70 || speed < 40){
             print("You are breaking the law!");
@@ -27,7 +27,7 @@ public class speedCheck : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)){
-            calculateSpeed(distance, time);
+            CalculateSpeed(distance, time);
         }
     }
 }
