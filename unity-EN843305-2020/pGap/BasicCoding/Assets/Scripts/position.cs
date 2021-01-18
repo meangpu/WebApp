@@ -15,7 +15,13 @@ public class position : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+        currentTime = Time.time;
+        deltaTime = currentTime-lastTIme;
+        lastTIme = currentTime;
+        print(deltaTime);
+
+        
 
         if (Input.GetKeyDown(KeyCode.A) && (Input.GetKey(KeyCode.LeftShift))){
             print("big A key was pressed!!");
