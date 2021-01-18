@@ -4,7 +4,11 @@
 website <https://meangpu.github.io/study/unity-EN843305-2020/>  
 # **ajKanda**  
 ## **slide 1**  
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+<p>
+   <a href="https://youtu.be/gGpbCCyqbJk"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.gif" width="500" title="click to watch in youtube"></a> 
+</p>
+
+
 
 
 # **MainLabs**  
