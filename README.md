@@ -5,7 +5,7 @@ website <https://meangpu.github.io/study/unity-EN843305-2020/>
 # **ajKanda**  
 ## **slide 1**  
 <p>
-   <a href="https://youtu.be/gGpbCCyqbJk"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.gif" width="800" title="click to watch in youtube"></a> 
+   <a href="https://youtu.be/gGpbCCyqbJk"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.gif" width="400" title="click to watch in youtube"></a> 
 </p>
 
 
@@ -20,7 +20,7 @@ Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab1/>
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab2/>  
 
 <p>
-  <img src="https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg" width="800" title="error image">
+  <img src="https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg" width="400" title="error image">
 </p>
 
 Github Unity Project Forked  
