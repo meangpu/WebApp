@@ -8,27 +8,34 @@ public class speedCheck : MonoBehaviour
     public float distance = 100.0f;
     public float time = 50.0f;
     public float maxSpeedLimit = 70f;
-
+    public float minSpeedLimit = 40f;
 
     // ip stand from input
-    void CalculateSpeed(float ipdistance, float iptime){
-        float ipspeed = ipdistance/iptime;
-        if (ipspeed > 70 || speed < 40){
-            print("You are breaking the law!");
+    void SpeedCalculate(){
+        speed = distance / time;
+        if (speed > maxSpeedLimit){
+            print("You are exceeding the speed limit!");
         }
-        print("you are traveling at " + ipspeed + " MPH");
+        else if (speed < minSpeedLimit){
+            print("You are not going fast enough");
+        }
+        else if (speed == maxSpeedLimit || speed == minSpeedLimit){
+            print("You are about to breaking the law!");
+        }       
+        else {
+            print("You are within the speed limit!");
+        }  
     }
     void Start()
     {
- 
-        
+        SpeedCalculate();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)){
-            CalculateSpeed(distance, time);
+            SpeedCalculate();
         }
     }
 }
