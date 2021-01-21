@@ -5,14 +5,18 @@ using UnityEngine;
 public class ExampleScript2 : MonoBehaviour
 {
     private int enemyDistance = 0;
-    private int enemyCount = 3;
+    static private int enemyCount = 3;
+    private string[] enemies = new string[enemyCount];
+    private int weaponId = 0;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)){
             // EnemySearch();
             // EnemyDestruction();
-            EnemyScan();
+            // EnemyScan();
+            // EnemyRoaster();
+            WeaponSearch();
         }
     }
 
@@ -49,4 +53,40 @@ public class ExampleScript2 : MonoBehaviour
         }
         while (isAlive == true);
     }
+
+    void EnemyRoaster()
+    {
+        enemies[0] = "Orc";
+        enemies[1] = "Dragon";
+        enemies[2] = "Snake";
+
+        foreach (string enemy in enemies){
+            print(enemy);
+        }
+    }
+
+    void WeaponSearch()
+    {
+        weaponId = Random.Range(0, 8);
+        switch (weaponId)
+        {
+            case 1:
+                print("You found a sword!");
+                break;
+            case 2:
+                print("You found a axe!");
+                break;
+            case 3:
+                print("You found a dagger!");
+                break;     
+            case 4:
+                print("You found a bow!");
+                break;    
+            default:
+                print("You didn't find anything!");
+                break;          
+        }
+    }
+
+
 }
