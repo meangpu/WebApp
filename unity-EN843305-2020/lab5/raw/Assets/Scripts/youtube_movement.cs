@@ -11,10 +11,56 @@ public class youtube_movement : MonoBehaviour
     bool jump = false;
     bool crouch = false;
 
+    public int playerDirection = 0;
+
+
+    // for ui button
+    public void SetMoveLeft(bool b)
+    {
+        if (b)
+        {
+            playerDirection = -1;
+        }
+        else
+        {
+            playerDirection = 0;
+        }
+        
+    }
+
+    public void SetMoveRight(bool b)
+    {
+        if (b)
+        {
+            playerDirection = 1;
+        }
+        else
+        {
+            playerDirection = 0;
+        }
+    }
+
+    public void SetButtonjump()
+    {
+        jump = true;
+    }
+
+    
     void Update()
     {
-        // left =-1 right = 1
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if (playerDirection == 0){
+            // left =-1 right = 1
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        } 
+        else if (playerDirection == 1)
+        {
+            horizontalMove = 1 * runSpeed;
+        }
+        else if (playerDirection == -1)
+        {
+            horizontalMove = -1 * runSpeed;
+        }
+
 
         if (Input.GetButtonDown("Jump"))
         {
