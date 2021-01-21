@@ -15,8 +15,8 @@ public class ExampleScript2 : MonoBehaviour
             // EnemySearch();
             // EnemyDestruction();
             // EnemyScan();
-            // EnemyRoaster();
-            WeaponSearch();
+            EnemyRoaster();
+            // WeaponSearch();
         }
     }
 
