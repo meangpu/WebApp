@@ -40,9 +40,8 @@ Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab3/Exported/R
 Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab3/UnityGameRaw/RPG>  
 ****************************************************
 ## **Lab 4**
-#### **PART1**  
-Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab4/exported/part1/>  
-Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab4/raw/part1>  
+Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab4/exported/>  
+Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab4/raw/>  
 ****************************************************
 ## **Lab 5**
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab5/exported/>  
