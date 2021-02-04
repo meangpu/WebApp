@@ -10,6 +10,9 @@ website <https://meangpu.github.io/study/unity-EN843305-2020/>
 
 ## **slide 3**  
 Basic Game Object Manipulation: <https://meangpu.github.io/study/unity-EN843305-2020/ajKanda/slide3/exported/>
+<p>
+   <a href="https://youtu.be/xXw9NqvApaA"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.gif" width="400" title="click to watch in youtube"></a> 
+</p>
 
 
 # **MainLabs**  
