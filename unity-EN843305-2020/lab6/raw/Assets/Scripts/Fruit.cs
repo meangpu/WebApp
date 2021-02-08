@@ -9,9 +9,9 @@ public class Fruit : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
         
         if(other.gameObject.name == "player"){
-            GameObject.Find("EventSystem").GetComponent<scoreManager>().score += 1;
+            GameObject.Find("EventSystem").GetComponent<GameManager>().score += 1;
             Destroy(gameObject);
-            GameObject.Find("EventSystem").GetComponent<scoreManager>().updateScore();
+            GameObject.Find("EventSystem").GetComponent<GameManager>().updateScore();
         }
         
     }

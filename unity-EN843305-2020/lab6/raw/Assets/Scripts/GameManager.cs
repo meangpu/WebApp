@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class scoreManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public int score;
+    public int gameTime;
     public TextMeshProUGUI text_score;
+    public TextMeshProUGUI text_timer;
 
     public void updateScore(){
         text_score.text = "score: " + score.ToString();

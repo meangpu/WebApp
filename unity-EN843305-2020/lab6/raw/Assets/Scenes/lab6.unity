@@ -1044,7 +1044,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  gameTime: 0
   text_score: {fileID: 2064173048}
+  text_timer: {fileID: 1748595820}
 --- !u!1 &384148944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,7 +3524,7 @@ GameObject:
   - component: {fileID: 1748595821}
   - component: {fileID: 1748595820}
   m_Layer: 5
-  m_Name: t_timeleft
+  m_Name: t_time_number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
