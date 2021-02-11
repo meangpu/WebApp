@@ -645,6 +645,10 @@ MonoBehaviour:
   - {fileID: 8668293492858479856, guid: a141d0d0b34253841bcfc1b79bd7797a, type: 3}
   Left: {fileID: 1392389187}
   Right: {fileID: 330634486}
+  fruitWave:
+  - 12121
+  - 1111
+  - 6666
 --- !u!1 &384148944
 GameObject:
   m_ObjectHideFlags: 0
