@@ -61,20 +61,29 @@ public class GameManager : MonoBehaviour
     }
     
     void SpawnFruitWave(){
-         int fruitRandomId = Random.Range(0, fruits.Length);
+        int fruitRandomId = Random.Range(0, fruits.Length);
+        // random fruit id to spawn
 
         if (waveCount > fruitWave[waveState].Length - 1){
+            // happen when one item in list finish it will go to next one
             waveCount = 0;
             waveState++;
             if (waveState > fruitWave.Length - 1){
+                // happen when all item in list finished
                 CancelInvoke("SpawnFruitWave");
                 return;
             }
         }
+
         int fruitPosition = int.Parse(fruitWave[waveState][waveCount].ToString());
         Vector2 position = new Vector2(-width/2 + (width/10f)*fruitPosition, height/2);
         Instantiate(fruits[fruitRandomId], position, Quaternion.identity);
+        Debug.Log("create fruit id: " + fruitRandomId + "/ at: " + position);
+        Debug.Log("current number: " + fruitWave[waveState][waveCount]);
         waveCount++;
+
+
+        // will run through all number in list 
 
 
     }
