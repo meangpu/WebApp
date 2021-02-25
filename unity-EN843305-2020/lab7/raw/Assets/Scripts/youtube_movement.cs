@@ -45,6 +45,7 @@ public class youtube_movement : MonoBehaviour
     public void SetButtonjump()
     {
         jump = true;
+        animator.SetBool("jumping", true);
     }
 
     
@@ -60,10 +61,12 @@ public class youtube_movement : MonoBehaviour
         else if (playerDirection == 1)
         {
             horizontalMove = 1 * runSpeed;
+            animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         }
         else if (playerDirection == -1)
         {
             horizontalMove = -1 * runSpeed;
+            animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         }
 
 
