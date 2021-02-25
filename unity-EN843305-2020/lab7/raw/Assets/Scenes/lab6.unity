@@ -133,13 +133,12 @@ GameObject:
   m_Component:
   - component: {fileID: 48356326}
   - component: {fileID: 48356325}
-  - component: {fileID: 48356324}
   - component: {fileID: 48356327}
   - component: {fileID: 48356328}
   - component: {fileID: 48356331}
-  - component: {fileID: 48356329}
   - component: {fileID: 48356330}
   - component: {fileID: 48356332}
+  - component: {fileID: 48356324}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -157,7 +156,7 @@ Animator:
   m_GameObject: {fileID: 48356323}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f0d5eeb9c90072f46812c54aa20c2a13, type: 2}
+  m_Controller: {fileID: 9100000, guid: a2daf84cb7c721a47bffa152e889f534, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -280,25 +279,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9849, y: 0.259331}
   m_EdgeRadius: 0
---- !u!114 &48356329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48356323}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 204cc6be62168ab4d805f017ddb7ceda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerXSpeed: 2
-  playerDownSpeed: 80
-  playerJumpStrength: 650
-  isLeft: 0
-  isRight: 0
-  isDown: 0
-  isJump: 0
 --- !u!114 &48356330
 MonoBehaviour:
   m_ObjectHideFlags: 0
