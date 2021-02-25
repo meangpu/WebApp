@@ -12,6 +12,8 @@ public class youtube_movement : MonoBehaviour
     bool crouch = false;
 
     public int playerDirection = 0;
+    public Animator animator;
+
 
 
     // for ui button
@@ -48,9 +50,12 @@ public class youtube_movement : MonoBehaviour
     
     void Update()
     {
+        
         if (playerDirection == 0){
             // left =-1 right = 1
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+            // make value alway positive to make animation alway played the right way
+            animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         } 
         else if (playerDirection == 1)
         {
@@ -65,6 +70,7 @@ public class youtube_movement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            animator.SetBool("jumping", true);
         }
         if (Input.GetButtonDown("Crouch"))
         {
@@ -82,5 +88,10 @@ public class youtube_movement : MonoBehaviour
         // move not crouch not jump
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
+    }
+
+
+    public void OnLanding(){
+        animator.SetBool("jumping", false);
     }
 }
