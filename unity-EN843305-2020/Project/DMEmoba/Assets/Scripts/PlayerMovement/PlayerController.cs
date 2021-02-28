@@ -1,11 +1,11 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
 
-    private Player playerInput;
+    private Main_controller playerInput;
 
     private CharacterController controller;
     private Vector3 playerVelocity;
@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private float gravityValue = -9.81f;
 
     private void Awake() {
-        playerInput = new Player();
+        playerInput = new Main_controller();
         controller = GetComponent<CharacterController>();
     }
 

@@ -37,7 +37,7 @@
                 {
                     "name": "WASD",
                     "id": "415049c1-6fec-4689-a89e-badf095221cd",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

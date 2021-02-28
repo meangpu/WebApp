@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/main_controller.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/PlayerMovement/main_controller.inputactions'
 
 using System;
 using System.Collections;
@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @Player : IInputActionCollection, IDisposable
+public class @Main_controller : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @Player()
+    public @Main_controller()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""Player"",
+    ""name"": ""main_controller"",
     ""maps"": [
         {
             ""name"": ""Playermain"",
@@ -50,7 +50,7 @@ public class @Player : IInputActionCollection, IDisposable
                 {
                     ""name"": ""WASD"",
                     ""id"": ""415049c1-6fec-4689-a89e-badf095221cd"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=2)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -175,8 +175,8 @@ public class @Player : IInputActionCollection, IDisposable
     private readonly InputAction m_Playermain_Attack;
     public struct PlayermainActions
     {
-        private @Player m_Wrapper;
-        public PlayermainActions(@Player wrapper) { m_Wrapper = wrapper; }
+        private @Main_controller m_Wrapper;
+        public PlayermainActions(@Main_controller wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Playermain_Move;
         public InputAction @Attack => m_Wrapper.m_Playermain_Attack;
         public InputActionMap Get() { return m_Wrapper.m_Playermain; }
