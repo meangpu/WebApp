@@ -306,13 +306,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 339213068724493022, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: entryNameText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 339213068724493022, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: entryScoreText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443899632349704469, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -59
+      objectReference: {fileID: 0}
     - target: {fileID: 4360344660796155998, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
       propertyPath: m_Name
       value: SystemScoreboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360344660796155998, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4904084847062197214, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -320,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5690861847362276183, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
       propertyPath: testEntryName
-      value: aaaa
+      value: dddd
       objectReference: {fileID: 0}
     - target: {fileID: 5690861847362276183, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
       propertyPath: testEntryScore
@@ -377,6 +421,10 @@ PrefabInstance:
     - target: {fileID: 6147788760565112090, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691288844795021533, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8044432290685300094, guid: f588c8a3b65c1ef468b02205b5b49a05, type: 3}
       propertyPath: m_AnchorMax.y

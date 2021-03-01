@@ -13,7 +13,7 @@ public class Scoreboard : MonoBehaviour
     [SerializeField] private int testEntryScore = 0;
     private string SavePath => $"{Application.persistentDataPath}/highscore.json";
 
-    private void start(){
+    private void Start(){
         print(SavePath);
         ScoreboardSaveData savedScores = GetSavedScores();
         UpdateUI(savedScores);
