@@ -66,28 +66,36 @@ public class NetworkManager : MonoBehaviour
         if (key != room.SessionId)
         {
             print("Create new Player");
-            if (GameObject.Find(key) == null)
-            {
-                var newPlayer = Instantiate(otherPlayer, new Vector3(player.position.x, player.position.y, player.position.z), new Quaternion(player.rotation.x, player.rotation.y, player.rotation.z, player.rotation.w));
-                newPlayer.name = key;
-                newPlayer.GetComponent<PlayerPosition>().ChangeName(key);
-            }
+            // if (GameObject.Find(key) == null)
+            // {
+            //     var newPlayer = Instantiate(otherPlayer, new Vector3(player.position.x, player.position.y, player.position.z), new Quaternion(player.rotation.x, player.rotation.y, player.rotation.z, player.rotation.w));
+            //     newPlayer.name = key;
+            //     //newPlayer.GetComponent<PlayerPosition>().ChangeName(key);
+            // }
 
             player.OnChange += (changes) =>
             {
-                var objectRef = GameObject.Find(key);
-                changes.ForEach( (obj) => {
-                    if (obj.Field == "position")
-                    {
-                        Vect3 pos = (Vect3)obj.Value;
-                        print("ID: " + key + " at " + pos.x + ", " + pos.y + ", " + pos.z);
-                        objectRef.transform.position = new Vector3(pos.x, pos.y, pos.z);
-                    } else if(obj.Field == "rotation")
-                    {
-                        Quat rot = (Quat)obj.Value;
-                        print("ID: " + key + " at " + rot.x + ", " + rot.y + ", " + rot.z + ", " + rot.w);
-                    }
-                });
+                print("Player " + key + "has moved");
+                //var objectRef = GameObject.Find(key);
+                // changes.ForEach( (obj) => {
+                //     if (obj.Field == "position")
+                //     {
+                //         Vect3 pos = (Vect3)obj.Value;
+                //         print("ID: " + key + " at " + pos.x + ", " + pos.y + ", " + pos.z);
+                //         //objectRef.transform.position += new Vector3(0.01f, 0f, 0f);
+                //         //objectRef.transform.position = new Vector3(pos.x, pos.y, pos.z);
+
+                //         Vector3 targetPos = new Vector3(pos.x, pos.y, pos.z);
+                //         if (Vector3.Distance(targetPos, objectRef.transform.position) > 0.01f)
+                //         {
+                //             objectRef.transform.position = targetPos;
+                //         }
+                //     } else if(obj.Field == "rotation")
+                //     {
+                //         Quat rot = (Quat)obj.Value;
+                //         print("ID: " + key + " at " + rot.x + ", " + rot.y + ", " + rot.z + ", " + rot.w);
+                //     }
+                // });
                
             };
         }

@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void GotoScene()
     {
+        FindObjectOfType<AudioManager>().Play("startButton2");
         SceneManager.LoadScene(sceneIndex);
     }
 
@@ -18,4 +19,5 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QuitGame");
         Application.Quit();
     }
+
 }
