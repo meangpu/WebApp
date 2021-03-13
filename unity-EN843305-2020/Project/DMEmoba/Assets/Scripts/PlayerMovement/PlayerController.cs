@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector2 movementInput = playerInput.Playermain.Move.ReadValue<Vector2>();
+        // Debug.Log(movementInput);
         Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
