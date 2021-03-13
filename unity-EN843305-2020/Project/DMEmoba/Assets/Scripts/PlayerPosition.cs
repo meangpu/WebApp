@@ -26,12 +26,13 @@ public class PlayerPosition : MonoBehaviour
     void Update()
     {
        sendTimer += Time.deltaTime;
-       if (sendTimer >= sendInterval)
-       {
-           if (network.connectionState) {
-                UpdatePosition(transform.position, transform.rotation);
-            }
-       }
+    //    if (sendTimer >= sendInterval)
+    //    {
+           
+    //    }
+       if (network.connectionState) {
+            UpdatePosition(transform.position, transform.rotation);
+        }
     }
 
     void UpdatePosition(Vector3 _pos, Quaternion _rot)

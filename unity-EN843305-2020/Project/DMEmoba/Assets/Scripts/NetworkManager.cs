@@ -48,7 +48,6 @@ public class NetworkManager : MonoBehaviour
 
             userPlayerScript.ChangeName(room.SessionId);
             room.State.players.OnAdd += OnPlayerAdd;
-
         } catch (Exception ex) {
             status = "Connection failed";
             Debug.Log(ex);
@@ -65,39 +64,30 @@ public class NetworkManager : MonoBehaviour
     {
         if (key != room.SessionId)
         {
-            print("Create new Player");
-            // if (GameObject.Find(key) == null)
-            // {
-            //     var newPlayer = Instantiate(otherPlayer, new Vector3(player.position.x, player.position.y, player.position.z), new Quaternion(player.rotation.x, player.rotation.y, player.rotation.z, player.rotation.w));
-            //     newPlayer.name = key;
-            //     //newPlayer.GetComponent<PlayerPosition>().ChangeName(key);
-            // }
-
-            player.OnChange += (changes) =>
-            {
-                print("Player " + key + "has moved");
-                //var objectRef = GameObject.Find(key);
-                // changes.ForEach( (obj) => {
-                //     if (obj.Field == "position")
-                //     {
-                //         Vect3 pos = (Vect3)obj.Value;
-                //         print("ID: " + key + " at " + pos.x + ", " + pos.y + ", " + pos.z);
-                //         //objectRef.transform.position += new Vector3(0.01f, 0f, 0f);
-                //         //objectRef.transform.position = new Vector3(pos.x, pos.y, pos.z);
-
-                //         Vector3 targetPos = new Vector3(pos.x, pos.y, pos.z);
-                //         if (Vector3.Distance(targetPos, objectRef.transform.position) > 0.01f)
-                //         {
-                //             objectRef.transform.position = targetPos;
-                //         }
-                //     } else if(obj.Field == "rotation")
-                //     {
-                //         Quat rot = (Quat)obj.Value;
-                //         print("ID: " + key + " at " + rot.x + ", " + rot.y + ", " + rot.z + ", " + rot.w);
-                //     }
-                // });
-               
-            };
+            Vect3 pos = (Vect3)player.position;
+            Quat rot = (Quat)player.rotation;
+            var newPlayer = Instantiate(otherPlayer, new Vector3(pos.x, pos.y, pos.z), new Quaternion(rot.x, rot.y, rot.z, rot.w));
+            newPlayer.name = key;
+            newPlayer.GetComponent<PlayerName>().ChangeName(key);
+            player.OnChange += (changes) => OnPlayerChange(changes, key);
         }
     }
+
+    void OnPlayerChange(List<Colyseus.Schema.DataChange> changes, string key)
+    {
+        var objRef = GameObject.Find(key);
+        if (key != room.SessionId)
+        {
+            changes.ForEach( (obj) => {
+                if (obj.Field == "position")
+                {
+                    Vect3 pos = (Vect3)obj.Value;
+                    print("Player " + key + "moved at " + pos.x + ", " + pos.y + ", " + pos.z);
+                    objRef.transform.position = new Vector3(pos.x, pos.y, pos.z);
+                }
+            });
+        }
+    }
+
+  
 }
