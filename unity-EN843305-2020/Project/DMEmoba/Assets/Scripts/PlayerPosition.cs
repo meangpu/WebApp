@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+class PlayerInputMessage
+{
+    public Vect3 position;
+    public Quat rotation;
+}
+
 public class PlayerPosition : MonoBehaviour
 {
     public NetworkManager network;
@@ -23,15 +29,27 @@ public class PlayerPosition : MonoBehaviour
        if (sendTimer >= sendInterval)
        {
            if (network.connectionState) {
-                UpdatePosition();
+                UpdatePosition(transform.position, transform.rotation);
             }
        }
     
     }
 
-    async void UpdatePosition()
+    void UpdatePosition(Vector3 _pos, Quaternion _rot)
     { 
-        await network.room.Send("position", new { x = transform.position.x, y = transform.position.z });
+        PlayerInputMessage msg = new PlayerInputMessage();
+        Vect3 pos = new Vect3();
+        pos.x = _pos.x;
+        pos.y = _pos.y;
+        pos.z = _pos.z;
+        Quat rot = new Quat();
+        rot.x = 0;
+        rot.y = 0;
+        rot.z = 0;
+        rot.w = 1;
+        msg.position = pos;
+        msg.rotation = rot;
+        network.room.Send("input", msg);
     }
 
     public void ChangeName(string newName)

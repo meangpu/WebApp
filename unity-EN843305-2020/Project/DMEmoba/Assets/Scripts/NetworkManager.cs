@@ -14,7 +14,7 @@ public class NetworkManager : MonoBehaviour
     private PlayerPosition userPlayerScript;
 
     public Client client;
-    string endPoint = "ws://54.251.89.32:2567";
+    string endPoint = "ws://ivrylobs.xyz:2567";
     public Room<State> room;
     string roomName  = "arena";
     string status = "";
@@ -61,29 +61,27 @@ public class NetworkManager : MonoBehaviour
         statusText.text = status;
     }
 
-    void OnPlayerAdd(Player player, string key)
+    void OnPlayerAdd(PlayerData player, string key)
     {
         if (key != room.SessionId)
         {
-            var newPlayer = Instantiate(otherPlayer, new Vector3(0f, 0f, 0f), Quaternion.identity);
+            var newPlayer = Instantiate(otherPlayer, new Vector3(player.position.x, player.position.y, player.position.z), new Quaternion(player.rotation.x, player.rotation.y, player.rotation.z, player.rotation.w));
             newPlayer.name = key;
             newPlayer.GetComponent<PlayerPosition>().ChangeName(key);
             player.OnChange += (changes) =>
             {
-                if (room.SessionId != key)
-                {
-                    var objectRef = GameObject.Find(key);
-                    changes.ForEach( (obj) => {
-                        if (obj.Field == "x")
-                        {
-                            objectRef.transform.position = new Vector3(float.Parse(obj.Value.ToString()), objectRef.transform.position.y, objectRef.transform.position.z);
-                        } else if(obj.Field == "y")
-                        {
-                            objectRef.transform.position = new Vector3(objectRef.transform.position.x, objectRef.transform.position.y, float.Parse(obj.Value.ToString()));
-                        }
-                    });
-                   
-                }
+                var objectRef = GameObject.Find(key);
+                changes.ForEach( (obj) => {
+                    if (obj.Field == "position")
+                    {
+                        Vect3 pos = (Vect3)obj.Value;
+                        print("ID: " + key + " at " + pos.x + ", " + pos.y + ", " + pos.z);
+                    } else if(obj.Field == "rotation")
+                    {
+                        Quat rot = (Quat)obj.Value;
+                        print("ID: " + key + " at " + rot.x + ", " + rot.y + ", " + rot.z + ", " + rot.w);
+                    }
+                });
                
             };
         }
