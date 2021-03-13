@@ -65,9 +65,14 @@ public class NetworkManager : MonoBehaviour
     {
         if (key != room.SessionId)
         {
-            var newPlayer = Instantiate(otherPlayer, new Vector3(player.position.x, player.position.y, player.position.z), new Quaternion(player.rotation.x, player.rotation.y, player.rotation.z, player.rotation.w));
-            newPlayer.name = key;
-            newPlayer.GetComponent<PlayerPosition>().ChangeName(key);
+            print("Create new Player");
+            if (GameObject.Find(key) == null)
+            {
+                var newPlayer = Instantiate(otherPlayer, new Vector3(player.position.x, player.position.y, player.position.z), new Quaternion(player.rotation.x, player.rotation.y, player.rotation.z, player.rotation.w));
+                newPlayer.name = key;
+                newPlayer.GetComponent<PlayerPosition>().ChangeName(key);
+            }
+
             player.OnChange += (changes) =>
             {
                 var objectRef = GameObject.Find(key);
@@ -76,6 +81,7 @@ public class NetworkManager : MonoBehaviour
                     {
                         Vect3 pos = (Vect3)obj.Value;
                         print("ID: " + key + " at " + pos.x + ", " + pos.y + ", " + pos.z);
+                        objectRef.transform.position = new Vector3(pos.x, pos.y, pos.z);
                     } else if(obj.Field == "rotation")
                     {
                         Quat rot = (Quat)obj.Value;

@@ -32,7 +32,6 @@ public class PlayerPosition : MonoBehaviour
                 UpdatePosition(transform.position, transform.rotation);
             }
        }
-    
     }
 
     void UpdatePosition(Vector3 _pos, Quaternion _rot)
