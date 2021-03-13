@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meangpuPC\\Desktop\\OnlineGameTest\\serverC-sharp\\GameServer\\GameServer\\GameServer.csproj",
+      "projectUniqueName": "D:\\Github\\study\\unity-EN843305-2020\\Project\\selfLearnOnlineGame\\serverC-sharp\\GameServer\\GameServer\\GameServer.csproj",
       "projectName": "GameServer",
-      "projectPath": "C:\\Users\\meangpuPC\\Desktop\\OnlineGameTest\\serverC-sharp\\GameServer\\GameServer\\GameServer.csproj",
+      "projectPath": "D:\\Github\\study\\unity-EN843305-2020\\Project\\selfLearnOnlineGame\\serverC-sharp\\GameServer\\GameServer\\GameServer.csproj",
       "packagesPath": "C:\\Users\\meangpuPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meangpuPC\\Desktop\\OnlineGameTest\\serverC-sharp\\GameServer\\GameServer\\obj\\",
+      "outputPath": "D:\\Github\\study\\unity-EN843305-2020\\Project\\selfLearnOnlineGame\\serverC-sharp\\GameServer\\GameServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\meangpuPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
