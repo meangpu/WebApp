@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YkF2v3uvjy5oWczCbYWSB1EaW/8ZS2upryWxSKekWZw7KsGW9c5f7vW7nIFznbfeEyl2/Ck+BwP7mut2PXYNaQ==",
+  "dgSpecHash": "4nhj3OIEcSg6vFcyvhtyJ6hXBgDPdNyuIheeYYqwhZFb/Ji5p6TpMbFLYPF3KR/MypSGcD5XNJi1KFXKPv7HBQ==",
   "success": true,
   "projectFilePath": "D:\\Github\\study\\unity-EN843305-2020\\Project\\selfLearnOnlineGame\\serverC-sharp\\GameServer\\GameServer\\GameServer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\meangpuPC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
