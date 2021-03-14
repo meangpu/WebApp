@@ -8,7 +8,15 @@ public class BillBoard : MonoBehaviour
 
     private void LateUpdate() 
     {
-        transform.LookAt(transform.position + cam.forward);
+        if (cam == null)
+        {
+            cam = GameObject.Find("Main Camera").GetComponent<Transform>();
+        }
+        else
+        {
+            transform.LookAt(transform.position + cam.forward);
+        }
+        
     }
 
 }

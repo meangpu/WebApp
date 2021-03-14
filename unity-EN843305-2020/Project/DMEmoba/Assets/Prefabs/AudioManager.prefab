@@ -44,9 +44,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: bg1
-    clip: {fileID: 8300000, guid: 745504001c537e8448c95962e8413112, type: 3}
-    volumn: 0.15
+  - name: startButton1
+    clip: {fileID: 8300000, guid: fb8fea92287b03047b7be3fbb0621965, type: 3}
+    audioMixer: {fileID: -4309579062261020995, guid: 291af797a5d5c814889c3bf62b18658e, type: 2}
+    volumn: 1
     pitch: 1
-    loop: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: startButton2
+    clip: {fileID: 8300000, guid: 301b583c07932b242b72fe590818d2db, type: 3}
+    audioMixer: {fileID: -4309579062261020995, guid: 291af797a5d5c814889c3bf62b18658e, type: 2}
+    volumn: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
