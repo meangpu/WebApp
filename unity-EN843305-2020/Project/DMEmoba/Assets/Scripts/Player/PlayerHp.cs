@@ -11,12 +11,24 @@ public class PlayerHp : MonoBehaviour
 
     private void Awake() {
         currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (currentHealth - damage > 0)
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+        }
+        else
+        {
+            currentHealth = 0;
+            healthBar.SetHealth(currentHealth);
+            Debug.Log("Player DIE!!");
+            // Destroy(gameObject);
+        }
+
     }
 
 

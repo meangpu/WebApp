@@ -7,6 +7,8 @@ public class cameraSwitcher : MonoBehaviour
     public GameObject frontcam;
     public GameObject backCam;
 
+    public GameObject hpBar;
+
     AudioListener audioMainCam;
     AudioListener audioFrontCam;
     AudioListener audioBackCam;
@@ -32,16 +34,19 @@ public class cameraSwitcher : MonoBehaviour
     public void ToMainCam()
     {
         SetCamera(true, false, false);
+        hpBar.SetActive(true);
     }
 
     public void ToFrontCam()
     {
         SetCamera(false, true, false);
+        hpBar.SetActive(false);
     }
 
     public void ToBackCam()
     {
         SetCamera(false, false, true);
+        hpBar.SetActive(false);
     }
 
 
