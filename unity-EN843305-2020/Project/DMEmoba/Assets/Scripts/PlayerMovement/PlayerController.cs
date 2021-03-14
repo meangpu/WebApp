@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private float jumpHeight = 1.0f;
     [SerializeField]
     private float gravityValue = -9.81f;
+    public Animator anim = null;
 
     private void Awake() {
         playerInput = new Main_controller();
@@ -41,6 +42,10 @@ public class PlayerController : MonoBehaviour
         Vector2 movementInput = playerInput.Playermain.Move.ReadValue<Vector2>();
         // Debug.Log(movementInput);
         Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
+
+        //set animation speed
+        anim.SetFloat("speed", (Mathf.Abs(move.x)+Mathf.Abs(move.z)) * playerSpeed);
+
         controller.Move(move * Time.deltaTime * playerSpeed);
 
         if (move != Vector3.zero)
