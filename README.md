@@ -58,6 +58,9 @@ Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-20
 ## **Lab 7**
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab7/exported/>  
 Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab7/raw/>
-
+****************************************************
+## **Lab 9**
+Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab9/exported/>  
+Raw project file <https://github.com/meangpu/study/tree/master/unity-EN843305-2020/lab9/raw/>
 
 
