@@ -25,6 +25,12 @@ public class Fruit : MonoBehaviour
         {
             Destroy(gameObject);
             gameManager.life -= 1;
+
+            // GameOver
+            if (gameManager.life <= 0)
+            {
+                gameManager.GameOver();
+            }
         }
         
     }

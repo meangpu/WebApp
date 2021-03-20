@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public int score;
     public int gameTime;
     public int life = 3;
+    public GameObject gameOverPanel;
+    public GameOverTween gameOverTween;
+    public TextMeshProUGUI gameOverScore;
+
     public TextMeshProUGUI text_score;
     public TextMeshProUGUI text_timer;
     public GameObject[] fruits;
@@ -23,7 +28,11 @@ public class GameManager : MonoBehaviour
     float width;
     float height;
 
-    void Start() {
+    void Start() 
+    {
+
+        gameOverTween = GameObject.Find("tweenManager").GetComponent<GameOverTween>();
+
         updateTime();
         updateScore();
 
@@ -40,6 +49,7 @@ public class GameManager : MonoBehaviour
     public void updateScore()
     {
         text_score.text = "score: " + score.ToString();
+        gameOverScore.text = score.ToString();
     }
 
     public void updateTime()
@@ -83,10 +93,35 @@ public class GameManager : MonoBehaviour
         int fruitPosition = int.Parse(fruitWave[waveState][waveCount].ToString());
         Vector2 position = new Vector2(-width/2 + (width/10f)*fruitPosition, height/2);
         Instantiate(fruits[fruitRandomId], position, Quaternion.identity);
-        Debug.Log("create fruit id: " + fruitRandomId + "/ at: " + position);
-        Debug.Log("current number: " + fruitWave[waveState][waveCount]);
+        // Debug.Log("create fruit id: " + fruitRandomId + "/ at: " + position);
+        // Debug.Log("current number: " + fruitWave[waveState][waveCount]);
         waveCount++;
         // will run through all number in list 
+    }
+
+    public void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+        gameOverTween.moveIn();
+        // set gameover in 1.5 second
+        Invoke("Death", 1.5f);
+
+        // gameOverPanel.SetActive(true);
+        // Time.timeScale = 0f;
+    }
+
+    public void Death()
+    {
+        // gameOverPanel.SetActive(true);
+        // gameOverTween.moveIn();
+
+        Time.timeScale = 0f;        
+    }
+
+    public void restartLevel()
+    {
+        SceneManager.LoadScene("MainGame");
+        Time.timeScale = 1f;
 
     }
 
