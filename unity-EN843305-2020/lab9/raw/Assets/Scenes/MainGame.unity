@@ -482,7 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 1353258956}
   center: {fileID: 86209414}
-  yOut: 964
+  outPos: {fileID: 0}
 --- !u!4 &197535858
 Transform:
   m_ObjectHideFlags: 0
