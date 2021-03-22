@@ -7,7 +7,7 @@ public class GameOverTween : MonoBehaviour
 {
     public Transform gameOverPanel;
     public Transform center;
-    public float yOut;
+    public Transform outPos;
 
     public void moveIn()
     {
@@ -16,7 +16,7 @@ public class GameOverTween : MonoBehaviour
 
     public void moveOut()
     {
-        gameOverPanel.DOMoveY(yOut, 1);
+        gameOverPanel.DOMoveY(outPos.position.y, 1);
     }
 
 }
