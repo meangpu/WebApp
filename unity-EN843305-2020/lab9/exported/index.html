@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <h1 style="text-align:center; font-family: arial;">I change script so that it make some fruit destroy in 1 fall and some in 2 fall</h1>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -27,11 +28,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/exported.loader.js";
+      var loaderUrl = buildUrl + "/export.loader.js";
       var config = {
-        dataUrl: buildUrl + "/exported.data",
-        frameworkUrl: buildUrl + "/exported.framework.js",
-        codeUrl: buildUrl + "/exported.wasm",
+        dataUrl: buildUrl + "/export.data",
+        frameworkUrl: buildUrl + "/export.framework.js",
+        codeUrl: buildUrl + "/export.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "lab9 613040128-7",

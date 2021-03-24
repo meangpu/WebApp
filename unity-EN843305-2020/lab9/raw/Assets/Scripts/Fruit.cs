@@ -7,6 +7,8 @@ public class Fruit : MonoBehaviour
 {
 
     GameManager gameManager;
+    int CountDestroy = 0;
+    public int fallManyTime = 1;
 
     private void Start() 
     {
@@ -23,14 +25,19 @@ public class Fruit : MonoBehaviour
         }
         else if (other.gameObject.tag == "Ground")
         {
-            Destroy(gameObject);
-            gameManager.life -= 1;
-
-            // GameOver
-            if (gameManager.life <= 0)
+            CountDestroy++;
+            if (CountDestroy > fallManyTime)
             {
-                gameManager.GameOver();
+                Destroy(gameObject);
+                gameManager.life -= 1;
+
+                // GameOver
+                if (gameManager.life <= 0)
+                {
+                    gameManager.GameOver();
+                }
             }
+
         }
         
     }
