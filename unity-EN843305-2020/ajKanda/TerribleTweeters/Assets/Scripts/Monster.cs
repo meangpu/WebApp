@@ -12,7 +12,7 @@ public class Monster : MonoBehaviour
     {
         if (shouldDieFromCollision(collision) && !_hasDie)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
@@ -34,12 +34,15 @@ public class Monster : MonoBehaviour
         return false;
     }
 
-    void Die()
+    IEnumerator Die()
     {
         _hasDie = true;
         GetComponent<SpriteRenderer>().sprite = _deadSprite;
         _particleSystem.Play();
-        // gameObject.SetActive(false);
+
+        yield return new WaitForSeconds(1);
+        gameObject.SetActive(false);
+        GameObject.Find("levelControl").GetComponent<GameManager>().checkFinishLevel();
     }
 
 
