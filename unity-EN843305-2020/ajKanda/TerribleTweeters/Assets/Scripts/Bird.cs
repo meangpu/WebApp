@@ -33,7 +33,7 @@ public class Bird : MonoBehaviour
         Vector2 direction = _startPosition - currentPosition;
         direction.Normalize();
         _rigidbody2D.isKinematic = false;
-        _rigidbody2D.AddForce(direction * _launchForce);
+        _rigidbody2D.AddForce(direction * _launchForce * Vector2.Distance(_startPosition, currentPosition));
         _spriteRenderer.color = new Color(1f,1f,1f,1f);
     }
 
