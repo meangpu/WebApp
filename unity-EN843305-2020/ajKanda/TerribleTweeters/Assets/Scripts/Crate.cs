@@ -26,6 +26,7 @@ public class Crate : MonoBehaviour
 
             if (hp <= 0)
             {
+                Debug.Log("Get score");
                 Destroy(gameObject);
                 scoreScript.addScore(score);
             }

@@ -12,6 +12,7 @@ public class LevelController : MonoBehaviour
     
     public void GoToNextLevel()
     {
+        Debug.Log("Going to next scene...");
         SceneManager.LoadScene(_nextLevelName);
     }
 
