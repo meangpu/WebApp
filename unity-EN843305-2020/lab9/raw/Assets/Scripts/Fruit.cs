@@ -13,6 +13,7 @@ public class Fruit : MonoBehaviour
     private void Start() 
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        // gameManager2 = GameObject.Find("GameManager25");
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
