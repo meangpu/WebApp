@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13810492612",
+    "firebase_url": "https://s1287finalexampart2-default-rtdb.firebaseio.com",
+    "project_id": "s1287finalexampart2",
+    "storage_bucket": "s1287finalexampart2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13810492612:android:814bf9f9adc63d3162d591",
+        "android_client_info": {
+          "package_name": "com.dme.nattapong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13810492612-f1u38eqpp8cq042ao40245hbo8gsq04t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpyyHYphFBGtErzakPSuSPGz1av2M7gwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13810492612-f1u38eqpp8cq042ao40245hbo8gsq04t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
