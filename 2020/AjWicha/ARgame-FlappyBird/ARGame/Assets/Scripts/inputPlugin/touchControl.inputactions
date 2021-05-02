@@ -1,0 +1,33 @@
+{
+    "name": "touchControl",
+    "maps": [
+        {
+            "name": "player",
+            "id": "2eb5f986-7d71-4eff-9cf5-68e570307ed3",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "f8a4ed18-bd7e-400e-aa1a-4d7d6e9566b8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4250a6a7-6299-4b88-8d33-04dbd71b8c13",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

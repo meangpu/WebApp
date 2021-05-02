@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Creator Kit - FPS/Scenes/FPS-613040128-7.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
