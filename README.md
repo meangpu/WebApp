@@ -5,13 +5,13 @@ website <https://meangpu.github.io/study/unity-EN843305-2020/>
 # **ajKanda**  
 ## **slide 1**  
 <p>
-   <a href="https://youtu.be/gGpbCCyqbJk"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide1/video/video.gif" width="400" title="click to watch in youtube"></a> 
+   <a href="https://youtu.be/gGpbCCyqbJk"> <img src="https://raw.githubusercontent.com/meangpu/study/master/2020/unityMobile/ajKanda/slide1/video/video.gif?token=AMLMZUBVYDZFLFAXRBSD4ETBJ4WYU" width="400" title="click to watch in youtube"></a> 
 </p>
 
 ## **slide 3**  
 Basic Game Object Manipulation: <https://meangpu.github.io/study/unity-EN843305-2020/ajKanda/slide3/exported/>
 <p>
-   <a href="https://youtu.be/xXw9NqvApaA"> <img src="https://github.com/meangpu/study/blob/master/unity-EN843305-2020/ajKanda/slide3/slide3.gif" width="400" title="click to watch in youtube"></a> 
+   <a href="https://youtu.be/xXw9NqvApaA"> <img src="https://raw.githubusercontent.com/meangpu/study/master/2020/unityMobile/ajKanda/slide3/slide3.gif?token=AMLMZUGUN5A7E3QEOKO7NSTBJ4W2E" width="400" title="click to watch in youtube"></a> 
 </p>
 
 
