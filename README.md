@@ -24,7 +24,7 @@ Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab1/>
 Github Page <https://meangpu.github.io/study/unity-EN843305-2020/lab2/>  
 
 <p>
-  <img src="https://meangpu.github.io/study/unity-EN843305-2020/lab2/Error.jpg" width="400" title="error image">
+  <img src="https://raw.githubusercontent.com/meangpu/study/master/2020/unityMobile/lab2/Error.jpg?token=AMLMZUEFETXQQZA62M5RDC3BJ4WTS" width="400" title="error image">
 </p>
 
 Github Unity Project Forked  
