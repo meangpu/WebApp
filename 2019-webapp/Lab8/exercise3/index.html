@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NattapongTang-128-7</title>
+</head>
+
+<body>
+
+    <input type="button" value="start" id="btn">
+    <p><a id="numTime"> 0 </a> seconds have gone by!</p>
+
+
+
+
+    <script>
+        var btn = document.getElementById("btn")
+        var numTime = document.getElementById("numTime")
+        var stop = false
+
+        // create it first
+        var cdTimer
+
+        btn.addEventListener("click", function() {
+            if (stop === false) {
+                // clear timer out first
+                clearInterval(cdTimer)
+                stop = true
+                btn.value = "stop"
+
+                // set timer again
+                cdTimer = window.setInterval(function() {
+                    countUp(numTime, 1)
+                }, 1000)
+
+
+            } else {
+                // clear timer out 
+                stop = false
+                clearInterval(cdTimer)
+                btn.value = "start"
+            }
+        })
+
+
+
+        function countUp(target, period) {
+            var now = parseFloat(target.textContent)
+            target.textContent = now + period
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+Evaluate result of loggingTuttep.txt
+Number of undetected faces: 37
+Correct face: 52
+Incorrect face: 166
+
+Evaluate result of loggingRoongpetch.txt
+Number of undetected faces: 0
+Correct face: 47
+Incorrect face: 208

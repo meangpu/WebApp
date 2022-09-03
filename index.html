@@ -1,34 +1,33 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>meangpu</title>
-    <link rel="shortcut icon" type="image/png" href="img/weblogo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="s-style.css" rel="stylesheet" type="text/css" />
+    <link href="s-port.css" rel="stylesheet" type="text/css" />
+    <link href="s-nav.css" rel="stylesheet" type="text/css" />
+    <link href="/s-footer.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="fetchData.js" async></script>
+    <script type="module" src="Homepagefetch.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="/img/book.png" />
+    <title>meangpu study</title>
   </head>
 
   <body>
-    <ul>
-      <li><a href="../">HOME</a></li>
-      <li><a href="../DMEgame/">GAME</a></li>
-      <li><a href="../MyPlayProject/">PROJECT</a></li>
-      <li><a class="active">STUDY</a></li>
-    </ul>
-
-    <div class="flex-container">
-      <div class="gallery">
-        <a href="2019/webapp/">
-          <img src="img/WebApp.webp" alt="webapp" width="600" height="400" />
-        </a>
-        <div class="desc"><b>EN842300</b><br />WebPrograming</div>
+    <nav class="main-nav">
+      <div class="container nav__container">
+        <ul class="nav__links">
+          <a href="/" class="active-nav">STUDY HOME</a>
+          <a href="/2019-webapp/">WEB-APP</a>
+          <a href="/2020-unityMobile-Kanda/">UNITY</a>
+        </ul>
       </div>
-
-      <div class="gallery">
-        <a href="2020/unityMobile/">
-          <img src="img/unity.webp" alt="unity" width="600" height="400" />
-        </a>
-        <div class="desc"><b>EN843305</b><br />Unity learning</div>
-      </div>
-    </div>
+    </nav>
+    <section>
+      <h1>All study subject</h1>
+      <div id="main-container" class="container portfolio__container"></div>
+    </section>
+    <footer class="footer__copyright">study 2020 remake 2022</footer>
   </body>
 </html>

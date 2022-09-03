@@ -1,0 +1,36 @@
+footer {
+  background: linear-gradient(
+    0deg,
+    var(--color-bg) 0%,
+    rgba(33, 33, 67, 0.895) 100%
+  );
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10rem;
+}
+
+footer a {
+  color: var(--color-bg);
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.footer__copyright {
+  color: var(--color-light);
+}
+
+/* ============== Small Devices(phone) ============== */
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer__socials {
+    margin-bottom: 2.6rem;
+  }
+}

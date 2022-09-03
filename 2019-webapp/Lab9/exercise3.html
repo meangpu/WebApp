@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+        
+        li button {
+            font-size: 8px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        var inputBox = document.querySelector("input")
+        var button = document.querySelector("button")
+        var itemlist = document.querySelector("ul")
+
+        // to count how many items
+        var numberItem = 0
+
+
+
+        button.addEventListener("click", function() {
+            // if click first tie create paragraph text to count item
+            if (numberItem == 0) {
+                var countNumber = document.createElement("p")
+                updateText(countNumber)
+
+                // give id to it so that it can be selected later
+
+                countNumber.id = "SP"
+                document.body.append(countNumber)
+
+                // call function add item
+                addItem()
+
+            } else {
+
+                // refer to count number paragraph 
+                var SP = document.getElementById("SP")
+                addItem()
+                updateText(SP)
+
+            }
+
+        })
+
+        function addItem() {
+            // refer to count number paragraph 
+            var SP = document.getElementById("SP")
+
+            if (inputBox.value) {
+                numberItem++
+
+                var newItem = document.createElement("li")
+                var newButton = document.createElement("button")
+
+                newItem.textContent = inputBox.value
+
+                // update number to count number paragraph 
+                updateText(SP)
+
+                newButton.textContent = "Delete"
+                newButton.addEventListener("click", function() {
+                    itemlist.removeChild(newItem)
+
+                    // minus number by one
+                    numberItem--
+
+                    // update number to count number paragraph 
+                    updateText(SP)
+
+                    // remove node if number == 0
+                    if (numberItem == 0) {
+                        document.body.removeChild(SP)
+                    }
+                })
+
+                newItem.appendChild(newButton)
+                itemlist.appendChild(newItem)
+
+                inputBox.value = ""
+                inputBox.focus()
+
+            } else {
+                // if user do not type anything into the field
+                alert("Please type some text")
+            }
+
+        }
+
+        // I define this function because it need to call this line so manytimes, I think it would be easier to read if I write it this way
+        function updateText(target) {
+            target.textContent = `The list has ${numberItem} items`
+        }
+    </script>
+</body>
+
+</html>

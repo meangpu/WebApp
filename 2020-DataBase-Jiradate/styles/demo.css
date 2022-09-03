@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+body {
+    font-family: 'Kanit', sans-serif;
+    color: #333;
+    font-size: 15px
+}
+
+a {
+    text-decoration: none
+}
+
+.row-heading {
+    font-weight: 500;
+    font-size: .7em;
+    text-transform: uppercase
+}
+
+.timetable .time-label {
+    font-size: .8em;
+    font-weight: 500
+}
+
+.timetable .time-entry.Lab {
+    background-color: #c490f5;
+    border: 1px solid #6a16b8
+}
+
+.timetable .time-entry.Lab:hover {
+    background-color: #ae67f0
+}
+
+#block-1 {
+    margin: 20px;
+    background: #0E9F98;
+    float: left;
+}
+
+#block-2 {
+    margin: 20px;
+    background: #04BF9D;
+    float: left;
+}
+
+.faiiz {
+    color: #a73b23;
+    padding: 3px;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #FAD7A0;
+}
+
+#main-content{
+    font-family: 'Kanit', sans-serif;
+    align-content: center;
+}
+
