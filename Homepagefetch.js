@@ -1,2 +1,2 @@
-import { setHomePageData } from "/fetchData.js";
+import { setHomePageData } from "/study/fetchData.js";
 setHomePageData();

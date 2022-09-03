@@ -1,2 +1,2 @@
-import { setUnityWebData } from "/fetchData.js";
+import { setUnityWebData } from "/study/fetchData.js";
 setUnityWebData();

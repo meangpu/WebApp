@@ -1,2 +1,2 @@
-import { setWebPageData } from "/fetchData.js";
+import { setWebPageData } from "/study/fetchData.js";
 setWebPageData();

@@ -1,2 +1,2 @@
-import { setLab3 } from "/fetchData.js";
+import { setLab3 } from "/study/fetchData.js";
 setLab3();
