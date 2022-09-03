@@ -1,6 +1,6 @@
 var divName = "main-container";
 var mainSelectDiv = document.getElementById(divName);
-const mainDataName = "/webdata.json";
+const mainDataName = "/study/webdata.json";
 
 function addToMainDiv(childContent) {
   mainSelectDiv.appendChild(childContent);
