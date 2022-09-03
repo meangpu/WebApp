@@ -31,13 +31,13 @@
   "webapp": [
     {
       "src": "/study/2019-webapp/Lab",
-      "img": "/2019-webapp/img/",
+      "img": "/study/2019-webapp/img/",
       "code": "lab",
       "loop": 9
     },
     {
       "code": "final",
-      "img": "/2019-webapp/img/final.webp",
+      "img": "/study/2019-webapp/img/final.webp",
       "src": "/study/2019-webapp/Final"
     }
   ],
@@ -45,7 +45,7 @@
   "unity": [
     {
       "src": "/study/2020-unityMobile-Kanda/lab",
-      "img": "/2020-unityMobile-Kanda/img/lab",
+      "img": "/study/2020-unityMobile-Kanda/img/lab",
       "code": "lab",
       "loop": 5
     }
@@ -53,17 +53,17 @@
   "unitylab3": [
     {
       "src": "/study/2020-unityMobile-Kanda/lab3/Exported/FPS",
-      "img": "/2020-unityMobile-Kanda/lab3/img/FPS.webp",
+      "img": "/study/2020-unityMobile-Kanda/lab3/img/FPS.webp",
       "code": "fps"
     },
     {
       "src": "/study/2020-unityMobile-Kanda/lab3/Exported/PUZZLE",
-      "img": "/2020-unityMobile-Kanda/lab3/img/PUZZLE.webp",
+      "img": "/study/2020-unityMobile-Kanda/lab3/img/PUZZLE.webp",
       "code": "puzzle"
     },
     {
       "src": "/study/2020-unityMobile-Kanda/lab3/Exported/RPG",
-      "img": "/2020-unityMobile-Kanda/lab3/img/RPG.webp",
+      "img": "/study/2020-unityMobile-Kanda/lab3/img/RPG.webp",
       "code": "rpg"
     }
   ]
